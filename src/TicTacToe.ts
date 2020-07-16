@@ -2,16 +2,12 @@ export interface Printer {
   print(input: string): void;
 }
 
-export interface ControllableGame {
-  move(input: string): void;
-}
-
-export default class TicTacToe implements ControllableGame {
+export default class TicTacToe {
   constructor(printer: Printer) {
     throw new Error('Method not implemented.');
   }
 
-  move(input: string): void {
+  move(input: number): void {
     throw new Error('Method not implemented.');
   }
 }
