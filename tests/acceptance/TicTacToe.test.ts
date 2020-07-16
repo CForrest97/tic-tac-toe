@@ -15,7 +15,7 @@ class MockController implements ControllerInterface {
 }
 
 describe('TicTacToe', () => {
-  it('should ', () => {
+  it('should play a game of tic-tac-toe and announce the winner', () => {
     const print = jest.fn();
     const printer: Printer = { print };
     const game: TicTacToe = new TicTacToe(printer);
